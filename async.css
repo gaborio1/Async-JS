@@ -15,7 +15,6 @@ body {
 }
 
 .container {
-    width: 500px;
     width: 80%;
     height: 100px;
     margin: 25px auto;
@@ -34,10 +33,14 @@ body {
     color: tomato;
 }
 
-.container3, .container4, .container5 {
+.promises {
     border: 3px solid steelblue;
 }
 
 .container4 {
     height: 150px;
+}
+
+.container6 {
+    height: 220px;
 }
