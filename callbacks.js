@@ -1,6 +1,5 @@
-
-
 const container = document.querySelector(".container1");
+const container2 = document.querySelector(".container2");
 
 // 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
 // WITHOUT CALLBACKS - CREATEPOST WILL NOT WORK !!!
@@ -54,7 +53,7 @@ createPost({ title: "post three", body: "two second delay" });
 // WITH CALLBACKS - ALL 3 POSTS WILL WORK AFTER 2 SECONDS
 // 🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰🀰
 
-const container2 = document.querySelector(".container2");
+
 
 const posts2 = [
     { title: "post one", body: "one second delay" },
@@ -70,7 +69,7 @@ const getPosts2 = () => {
         // });
         // document.body.innerHTML = output;
 
-        posts2.forEach((post) => {
+        posts.forEach((post) => {
             // console.log(post); 
             const li = document.createElement("li");
             li.innerHTML = `${post.title} - ${post.body}`;
